@@ -1,0 +1,27 @@
+.navList {
+  display: flex;
+}
+.navListItem:not(:last-child) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navListItem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navLink {
+  color: black;
+  text-decoration: none;
+}
+.navlink--active,
+.navLink:hover,
+.navLink:focus {
+  font-weight: bold;
+  color: blue;
+}
+.text {
+  padding: 20px;
+}
+.title {
+  margin-left: 20px;
+}

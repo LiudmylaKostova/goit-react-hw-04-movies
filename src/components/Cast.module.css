@@ -1,0 +1,13 @@
+.name {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.descr {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.text {
+  padding: 20px;
+}
