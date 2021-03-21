@@ -21,15 +21,17 @@ class MoviePageDetails extends Component {
       original_title,
       poster_path,
       title,
+      vote_average,
       overview,
-      popularity,
+      // popularity,
       genres,
     } = response.data;
 
     this.setState({
       // ...response.data,
       poster_path,
-      popularity,
+      vote_average,
+      // popularity,
       genres,
       overview,
 
@@ -59,7 +61,8 @@ class MoviePageDetails extends Component {
           />
           <div className={styles.descr}>
             <h1> {this.state.title}</h1>
-            <p>{this.state.popularity}</p>
+            <p>User score: {this.state.vote_average * 10}%</p>
+            {/* <p>{this.state.popularity}</p> */}
             <h3>Overview</h3>
             <p>{this.state.overview}</p>
             <h3>Genres</h3>
@@ -86,7 +89,6 @@ class MoviePageDetails extends Component {
             </Link>
           </ul>
         </div>
-
         <Switch>
           <Route path={`${this.props.match.path}/cast`} component={Cast} />
           <Route

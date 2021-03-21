@@ -17,7 +17,9 @@ class HomePage extends Component {
     );
 
     this.setState({ movies: response.data.results });
+    console.log(this.state);
   }
+
   render() {
     return (
       <>
